@@ -1,4 +1,4 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Девайс»
 
 * Студент: [Сергей Лисов](https://up.htmlacademy.ru/htmlcss/34/user/2097641)
 ---
