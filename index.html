@@ -14,21 +14,29 @@
 
     <nav class="header-navigation">
 
-      <a class="logo-link">
-        <img src="/image/icon/device-logo.svg" alt="Логотип интернет-магазина  «Девайс»" width="145" height="36">
-      </a>
+      <div>
+        <a class="logo-link">
+          <img class="logo-img img" src="/image/icon/device-logo.svg" alt="Логотип интернет-магазина  «Девайс»"
+            width="145" height="36">
+        </a>
+      </div>
 
       <ul class="additional-menu">
+
         <li class="additional-item search-item">
 
           <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
-            <input type="text" placeholder="Поиск по сайту" value="Текст поиска">
-
-            <button type="submit">
+            <label class="navigation-search-field" for="search-field">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input class="navigation-search-input" type="text" placeholder="Поиск по сайту" value="Текст поиска"
+                id="search-field">
+            </label>
+            <button class="navigation-search-button" type="submit">
               Найти
             </button>
           </form>
+
         </li>
 
         <li class="user-item personal-account">

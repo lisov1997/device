@@ -41,6 +41,11 @@
 	overflow: hidden;
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Page */
 
 .page {
@@ -66,6 +71,7 @@
 .page-main {
   flex-grow: 1;
 }
+
 
 /* Section */
 
@@ -203,7 +209,8 @@
   border: 2px solid transparent;
 }
 
-.modal-delivery-form .field-input::placeholder {
+.modal-delivery-form .field-input::placeholder,
+.navigation-search-input::placeholder {
   font: inherit;
   font-size: 16px;
   line-height: 125%;
@@ -214,8 +221,108 @@
   background-color: #dcdcdc;
 }
 
-.modal-delivery-form .field-input:focus {
-  border-color: #ffffff;
+.modal-delivery-form .field-input:focus,
+.navigation-search-input:focus,
+.navigation-search-button:focus:not(:active) {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+/* Header */
+
+.page-header {
+  background-color: #ffe17f;
+  padding: 13px 140px 0 140px;
+}
+
+.header-container {
+  margin: auto 60px;
+}
+
+.header-navigation {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.additional-menu,
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-link {
+  display: inline-block;
+}
+
+.logo-img {
+  display: block;
+}
+
+.navigation-search-form {
+  display: grid;
+  grid-template-columns: 357px 2px 158px;
+}
+
+.navigation-search-form::before {
+  content: "";
+  position: relative;
+  /* z-index:1; */
+
+  width: 2px;
+
+  background-color: #000000;
+}
+
+.navigation-search-field {
+  order: -1;
+}
+
+.navigation-search-input {
+  width: 100%;
+  padding: 10px 16px;
+  padding-left: 48px;
+  border: 2px solid #000000;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  background-color: transparent;
+  font: inherit;
+  font-size: 16px;
+  line-height: 125%;
+  background-image: url("../image/icon/search.svg");
+  background-repeat: no-repeat;
+  background-position: top 12px left 16px;
+}
+
+
+.navigation-search-form:disabled::before {
+  opacity: 0.3;
+}
+
+.navigation-search-input:disabled,
+.navigation-search-button:disabled {
+  opacity: 0.3;
+}
+
+.navigation-search-button {
+  border: 2px solid #000000;
+  border-left: none;
+  border-radius: 0 50px 50px 0;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.navigation-search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navigation-search-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
 }
 
