@@ -15,39 +15,34 @@
     <nav class="header-navigation">
 
       <a class="logo-link">
-        <img class="logo-img img" src="image/icon/device-logo.svg" alt="Логотип интернет-магазина  «Девайс»" width="145"
-          height="36">
+        <img class="logo-img img" src="./image/icon/device-logo.svg" alt="Логотип интернет-магазина  «Девайс»"
+          width="145" height="36">
       </a>
 
+      <div class="user-items">
 
-      <ul class="additional-menu">
+        <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
-        <li class="additional-item search-item">
+          <label class="navigation-search-field" for="search-field">
+            <span class="visually-hidden">Поиск по сайту</span>
+            <input class="navigation-search-input" type="text" placeholder="Поиск по сайту" value="Текст поиска"
+              id="search-field">
+          </label>
+          <button class="navigation-search-button" type="button">
+            Найти
+          </button>
+        </form>
 
-          <form class="navigation-search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="personal-account">
 
-            <label class="navigation-search-field" for="search-field">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input class="navigation-search-input" type="text" placeholder="Поиск по сайту" value="Текст поиска"
-                id="search-field">
-            </label>
-            <button class="navigation-search-button" type="button">
-              Найти
-            </button>
-          </form>
-
-        </li>
-
-        <li class="additional-item personal-account">
-
-          <a class="additional-item-link log-in">
+          <a class="personal-account-link log-in">
             <span class="visually-hidden">
               Войти в личный кабинет
             </span>
             Войти
           </a>
 
-          <a class="additional-item-link log-in visually-hidden">
+          <a class="personal-account-link log-in visually-hidden">
             <span class="visually-hidden">
               Ваш личный кабинет
             </span>
@@ -56,72 +51,78 @@
             </span>
           </a>
 
-          <a class="additional-item-link log-out visually-hidden">
+          <a class="personal-account-link log-out visually-hidden">
             <span class="visually-hidden">
               Выйти из личного кабинета
             </span>
             Выйти
           </a>
-        </li>
+        </div>
 
-        <li class="additional-item user-item">
+        <ul class="user-tools">
 
-          <a class="additional-item-link compare">
-            <span class="visually-hidden">
-              Сравнить товар
-            </span>
-            Сравнить
-          </a>
-        </li>
-
-        <li class="additional-item user-item">
-          <button class="additional-item-link cart" type="button">
-            <span class="cart-counter">
-              2
-            </span>
-            Корзина
-          </button>
-          <div class="popover popover-cart">
-            <ul class="cart-list">
-              <li class="cart-item">
-                <a class="cart-link" href="#">
-                  <figure class="cart-figure">
-                    <img class="cart-image" src="./image/catalog/card-1.png" alt="Любительская селфи-палка" width="39"
-                      height="43">
-                    <figcaption class="cart-title">Любительская <br> селфи-палка</figcaption>
-                  </figure>
-                </a>
-                <button class="cart-remove-button" type="button">
-                  <span class="visually-hidden">Удалить из корзины</span>
-                </button>
-              </li>
-              <li class="cart-item">
-                <a class="cart-link" href="#">
-                  <figure class="cart-figure">
-                    <img class="cart-image" src="./image/catalog/card-2.png" alt="Профессиональная
-                  селфи-палка" width="39" height="43">
-                    <figcaption class="cart-title">Профессиональная <br>селфи-палка</figcaption>
-                  </figure>
-                </a>
-                <button class="cart-remove-button" type="button">
-                  <span class="visually-hidden">Удалить из корзины</span>
-                </button>
-              </li>
-            </ul>
-
-            <div class="order-wrapper">
-              <span class="order-product">Товаров:
-                <span class="order-product-counter">2</span>
+          <li class="user-tool-item">
+            <button class="user-tools-btn compare" type="button">
+              <span class="visually-hidden">
+                Сравнить товар
               </span>
-              <span class="order-cost">Сумма:
-                <span class="order-cost-counter">2000</span>
-                ₽
+              Сравнить
+            </button>
+          </li>
+
+          <li class="user-tool-item">
+            <button class="user-tools-btn cart" type="button">
+              <span class="cart-counter">
+                2
               </span>
+              Корзина
+            </button>
+
+            <div class="popover popover-cart">
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-link" href="#">
+                    <figure class="cart-figure">
+                      <img class="cart-image" src="./image/catalog/card-1.png" alt="Любительская селфи-палка" width="39"
+                        height="43">
+                      <figcaption class="cart-title">Любительская <br> селфи-палка</figcaption>
+                    </figure>
+                  </a>
+                  <button class="cart-remove-button" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-link" href="#">
+                    <figure class="cart-figure">
+                      <img class="cart-image" src="./image/catalog/card-2.png" alt="Профессиональная
+                    селфи-палка" width="39" height="43">
+                      <figcaption class="cart-title">Профессиональная <br>селфи-палка</figcaption>
+                    </figure>
+                  </a>
+                  <button class="cart-remove-button" type="button">
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+
+              <div class="order-wrapper">
+                <span class="order-product">Товаров:
+                  <span class="order-product-counter">2</span>
+                </span>
+                <span class="order-cost">Сумма:
+                  <span class="order-cost-counter">2000</span>
+                  ₽
+                </span>
+              </div>
+              <button class="cart-open-button" type="button">Открыть корзину</button>
             </div>
-            <button class="cart-open-button" type="button">Открыть корзину</button>
-          </div>
-        </li>
-      </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
 
       <ul class="site-menu">
 
@@ -138,7 +139,7 @@
               </li>
 
               <li class="subcatalog-item">
-                <a class="subcatalog-item-link" href="#">Моноподы для cелфи</a>
+                <a class="subcatalog-item-link" href="catalog.html">Моноподы для cелфи</a>
               </li>
 
               <li class="subcatalog-item">
@@ -509,7 +510,7 @@
             <li class="delivery-item">ТоксБерри</li>
           </ul>
 
-          <a href="#" class="button moredetailed-link">
+          <a href="#" class="button more-info-link">
             Подробнее о нас
           </a>
         </li>
@@ -573,14 +574,13 @@
 
     <div class="footer-column-group device">
       <a class="logo-link">
-        <img class="logo-img" src="/image/icon/footer-device-logo.svg" alt="Логотип интернет-магазина  «Девайс»"
+        <img class="logo-img" src="./image/icon/footer-device-logo.svg" alt="Логотип интернет-магазина  «Девайс»"
           width="145" height="36">
       </a>
 
       <address class="footer-address">
-        <dd class="footer-address-desk">
-          <a class="footer-address-link" href="#">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.
-          </a>
+        <a class="footer-address-link" href="#">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.
+        </a>
       </address>
     </div>
 
