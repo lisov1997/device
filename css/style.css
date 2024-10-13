@@ -712,7 +712,8 @@
 }
 
 .site-menu-item.active .site-menu-link {
-  text-decoration: underline #000000 2px;
+  -webkit-text-decoration: underline #000000 2px;
+          text-decoration: underline #000000 2px;
   text-underline-offset: 4px;
 }
 
@@ -738,7 +739,8 @@
 }
 
 .subcatalog-item.active .subcatalog-item-link {
-  text-decoration: underline #000000 1px;
+  -webkit-text-decoration: underline #000000 1px;
+          text-decoration: underline #000000 1px;
   text-underline-offset: 2px;
 }
 
@@ -1522,13 +1524,15 @@
 
 .footer-menu-link:hover {
   color: #ffc700;
-  text-decoration: underline solid 2px;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
   text-underline-offset: 4px;
 }
 
 .footer-menu-link:active {
   color: #ffc700;
-  text-decoration: underline solid 2px;
+  -webkit-text-decoration: underline solid 2px;
+          text-decoration: underline solid 2px;
   text-underline-offset: 4px;
   opacity: 0.3;
 }
@@ -1819,7 +1823,8 @@
 
 .quantity-input {
   text-align: center;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .quantity-input::-webkit-inner-spin-button,
@@ -2085,7 +2090,8 @@
   color: rgba(0, 0, 0, 0.3);
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   font-size: 15px;
   line-height: 18px;
 }
@@ -2095,7 +2101,8 @@
 }
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -2210,7 +2217,8 @@
   background-image: url(../image/icon/sorting-card-select-icon.svg);
   background-repeat: no-repeat;
   background-position: top 12px right 12px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .sort-button-list {
