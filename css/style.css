@@ -352,7 +352,7 @@
   font: inherit;
   font-size: 16px;
   line-height: 125%;
-  background-image: url("../image/icon/search.svg");
+  background-image: url("../images/icon/search.svg");
   background-repeat: no-repeat;
   background-position: top 10px left 14px;
 }
@@ -450,14 +450,14 @@
 
 .log-in {
   padding-left: 27px;
-  background-image: url("../image/icon/log-in.svg");
+  background-image: url("../images/icon/log-in.svg");
   background-repeat: no-repeat;
   background-position: left 0 top 9px;
 }
 
 .compare {
   padding-left: 22px;
-  background-image: url("../image/icon/compare.svg");
+  background-image: url("../images/icon/compare.svg");
   background-repeat: no-repeat;
   background-position: left 0 top 9px;
 }
@@ -465,7 +465,7 @@
 .cart {
   position: relative;
   padding-left: 43px;
-  background-image: url("../image/icon/cart.svg");
+  background-image: url("../images/icon/cart.svg");
   background-repeat: no-repeat;
   background-position: left 15px top 5px;
 }
@@ -513,7 +513,7 @@
     right: 153px;
     width: 14px;
     height: 6px;
-    background-image: url("../image/icon/triangle.svg");
+    background-image: url("../images/icon/triangle.svg");
   }
 
 .cart-list {
@@ -576,7 +576,7 @@
   width: 10px;
   height: 10px;
   padding: 0;
-  background-image: url("../image/icon/cart-remove-button-icon.svg");
+  background-image: url("../images/icon/cart-remove-button-icon.svg");
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
@@ -677,20 +677,20 @@
   height: 50px;
   border: 2px solid #000000;
   border-radius: 50%;
-  background-image: url("../image/icon/plus.svg");
+  background-image: url("../images/icon/plus.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.3;
 }
 
 .catalog-item:focus-within .site-menu-link::after {
-  background-image: url("../image/icon/minus.svg");
+  background-image: url("../images/icon/minus.svg");
   opacity: 0.3;
 }
 
 .catalog-item .site-menu-link:focus::after {
   opacity: 0.3;
-  background-image: url("../image/icon/minus.svg");
+  background-image: url("../images/icon/minus.svg");
 }
 
 .catalog-item .site-menu-link:hover::after,
@@ -848,7 +848,7 @@
   width: 20px;
   height: 60px;
   border: none;
-  background-image: url("../image/icon/slider-arrow.svg");
+  background-image: url("../images/icon/slider-arrow.svg");
   background-color: transparent;
 }
 
@@ -1023,27 +1023,27 @@
 }
 
 .category-1::after {
-  background-image: url("../image/icon/category-1.svg");
+  background-image: url("../images/icon/category-1.svg");
 }
 
 .category-2::after {
-  background-image: url("../image/icon/category-2.svg");
+  background-image: url("../images/icon/category-2.svg");
 }
 
 .category-3::after {
-  background-image: url("../image/icon/category-3.svg");
+  background-image: url("../images/icon/category-3.svg");
 }
 
 .category-4::after {
-  background-image: url("../image/icon/category-4.svg");
+  background-image: url("../images/icon/category-4.svg");
 }
 
 .category-5::after {
-  background-image: url("../image/icon/category-5.svg");
+  background-image: url("../images/icon/category-5.svg");
 }
 
 .category-6::after {
-  background-image: url("../image/icon/category-6.svg");
+  background-image: url("../images/icon/category-6.svg");
 }
 
 
@@ -1157,7 +1157,7 @@
 }
 
 .tab-item-delivery::after {
-  background-image: url("../image/icon/tab-image-1.svg");
+  background-image: url("../images/icon/tab-image-1.svg");
   top: 78px;
   right: 203px;
   width: 136px;
@@ -1165,7 +1165,7 @@
 }
 
 .tab-item-warranty::after {
-  background-image: url("../image/icon/tab-image-2.svg");
+  background-image: url("../images/icon/tab-image-2.svg");
   top: 62px;
   right: 168px;
   width: 171px;
@@ -1173,7 +1173,7 @@
 }
 
 .tab-item-credit::after {
-  background-image: url("../image/icon/tab-image-3.svg");
+  background-image: url("../images/icon/tab-image-3.svg");
   top: 66px;
   right: 168px;
   width: 156px;
@@ -1211,7 +1211,7 @@
   width: 125px;
   height: 100px;
   background-color: #ffe17f;
-  background-image: url("../image/icon/delivery-icon.svg");
+  background-image: url("../images/icon/delivery-icon.svg");
   background-repeat: no-repeat;
   background-position: top 50% left 50%;
 }
@@ -1442,7 +1442,7 @@
   height: 16px;
   top: 7px;
   left: 0;
-  background-image: url("../image/icon/tick-big.svg");
+  background-image: url("../images/icon/tick-big.svg");
 }
 
 /* Footer */
@@ -1682,7 +1682,7 @@
   width: 26px;
   height: 26px;
   background-color: transparent;
-  background-image: url("../image/icon/modal-close-btn-icon.svg");
+  background-image: url("../images/icon/modal-close-btn-icon.svg");
   border: none;
   cursor: pointer;
 }
@@ -1737,11 +1737,11 @@
 }
 
 .name-field .field-input {
-  background-image: url("../image/icon/name-input-icon.svg");
+  background-image: url("../images/icon/name-input-icon.svg");
 }
 
 .email-field .field-input {
-  background-image: url("../image/icon/email-input-icon.svg");
+  background-image: url("../images/icon/email-input-icon.svg");
 }
 
 .field-message {
@@ -1765,7 +1765,7 @@
   width: 26px;
   height: 26px;
   background-color: #ffe17f;
-  background-image: url("../image/icon/i-icon.svg");
+  background-image: url("../images/icon/i-icon.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -1796,7 +1796,7 @@
   right: 38px;
   width: 14px;
   height: 6px;
-  background-image: url("../image/icon/triangle.svg");
+  background-image: url("../images/icon/triangle.svg");
 }
 
 .field-info:hover,
@@ -1909,7 +1909,7 @@
   content: "";
   width: 4px;
   height: 7px;
-  background-image: url("../image/icon/breadcrumbs-arrow-icon.svg");
+  background-image: url("../images/icon/breadcrumbs-arrow-icon.svg");
 }
 
 .breadcrumbs-link {
@@ -2171,7 +2171,7 @@
   left: 3px;
   width: 10px;
   height: 10px;
-  background-image: url("../image/icon/checkbox-tick-icon.svg");
+  background-image: url("../images/icon/checkbox-tick-icon.svg");
   content: "";
 }
 
@@ -2214,7 +2214,7 @@
   background-color: transparent;
   border: none;
   padding-right: 50px;
-  background-image: url(../image/icon/sorting-card-select-icon.svg);
+  background-image: url(../images/icon/sorting-card-select-icon.svg);
   background-repeat: no-repeat;
   background-position: top 12px right 12px;
   -webkit-appearance: none;
@@ -2244,7 +2244,7 @@
   width: 30px;
   height: 30px;
   content: "";
-  background-image: url(../image/icon/sort-button-icon.svg);
+  background-image: url(../images/icon/sort-button-icon.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 0.2;
