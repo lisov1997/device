@@ -18,7 +18,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/inter-900.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -80,7 +80,7 @@
   font-weight: 800;
   font-size: 50px;
   line-height: 100%;
-  color:#000000;
+  color: #000000;
 }
 
 .section-desk {
@@ -135,8 +135,13 @@
   background-color: #FFCC33;
 }
 
+.button:active::after {
+  background-color: transparent;
+}
+
 .button:focus:not(:active) {
-  border-color:  #af4fff;
+  border-color: #af4fff;
+  outline-color: transparent;
 }
 
 .button:disabled{
@@ -704,7 +709,7 @@
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
@@ -881,7 +886,7 @@
 .promo .section-title {
   position: relative;
   margin-bottom: 29px;
-  letter-spacing: -4px;
+  /* letter-spacing: -4px; */
 }
 
 .promo .section-desk {
@@ -917,6 +922,7 @@
 }
 
 .slider-pagination-button {
+  position: relative;
   width: 12px;
   height: 12px;
   padding: 0;
@@ -943,9 +949,14 @@
   opacity: 0.3;
 }
 
-.slider-pagination-button:focus:not(:active) {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
+.slider-pagination-button:focus:not(:active)::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #af4fff;
 }
 
 .product-features-list {
@@ -1006,7 +1017,7 @@
   font-weight: 800;
   font-size: 18px;
   line-height: 133%;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.02em;
   color: #000000;
   text-decoration: none;
 }
@@ -1105,7 +1116,7 @@
 }
 
 .tab-item .section-title {
-  letter-spacing: -0.06em;
+  /* letter-spacing: -0.06em; */
   margin-bottom: 34px;
 }
 
@@ -1200,7 +1211,6 @@
   text-decoration: none;
   background-color: #f0f0f0;
   cursor: pointer;
-  letter-spacing: 0.11em;
 }
 
 .delivery-link::before {
@@ -1268,7 +1278,7 @@
 }
 
 .info .section-title {
-  letter-spacing: -0.05em;
+  /* letter-spacing: -0.05em; */
 }
 
 .info-list {
@@ -1398,7 +1408,7 @@
 
 .subscribe-wrapper .section-title {
   max-width: 450px;
-  letter-spacing: -0.06em;
+  /* letter-spacing: -0.06em; */
   margin-left: 7px;
 }
 
@@ -1516,7 +1526,7 @@
 .footer-menu-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -1672,7 +1682,7 @@
 }
 
 .modal .section-title {
-  letter-spacing: -0.07em;
+  /* letter-spacing: -0.07em; */
 }
 
 .modal-close-button {
@@ -1884,7 +1894,7 @@
 
 .inner-header .section-title {
   margin-bottom: 16px;
-  letter-spacing: -0.09em;
+  /* letter-spacing: -0.09em; */
 }
 
 .breadcrumbs {
@@ -1945,7 +1955,6 @@
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
 }
@@ -2029,7 +2038,7 @@
   background-color: #f5f5f5;
 }
 
-.range-toggle:active:not(:focus) {
+.range-toggle:active {
   background-color: #000000;
 }
 
@@ -2148,7 +2157,7 @@
 }
 
 
-.control:hover .control-mark{
+.control:hover .control-mark {
   opacity: 0.6;
 }
 
@@ -2156,12 +2165,18 @@
   opacity: 0.3;
 }
 
-.control-input:focus ~ .control-mark {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
+.control-input:focus ~ .control-mark::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #af4fff;
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled + .control-mark,
+.control-input:disabled + .control-mark + .control-label {
   opacity: 0.1;
 }
 
