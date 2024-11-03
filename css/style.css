@@ -102,6 +102,7 @@
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
+
 }
 
 
@@ -141,7 +142,7 @@
 
 .button:focus:not(:active) {
   border-color: #af4fff;
-  outline-color: transparent;
+  outline: none;
 }
 
 .button:disabled{
@@ -176,7 +177,7 @@
 }
 
 .btn:disabled {
-  border-color:  #e5e5e5;
+  border-color: #e5e5e5;
   opacity: 0.3;
 }
 
@@ -211,8 +212,11 @@
   background-color: #ffffff;
 }
 
-.field-input:focus {
+.field-input:focus:not(:active) {
   background-color: #dcdcdc;
+}
+.field-input:active {
+ background-color: #ebebeb;
 }
 
 .field-input-error {
@@ -367,6 +371,9 @@
   opacity: 0.3;
 }
 
+.navigation-search-input:hover {
+  background-color: #ffffff;
+}
 .navigation-search-input:disabled,
 .navigation-search-button:disabled {
   opacity: 0.3;
@@ -416,7 +423,7 @@
   margin-right: 18px;
 }
 
-.personal-account-link,
+.personal-account-btn,
 .user-tools-btn {
   display: inline-block;
   text-decoration: none;
@@ -431,21 +438,21 @@
   padding: 0;
 }
 
-.personal-account-link:hover,
+.personal-account-btn:hover,
 .user-tools-btn:hover,
 .site-menu-link:hover,
 .subcatalog-item-link:hover {
   opacity: 0.6;
 }
 
-.personal-account-link:active,
+.personal-account-btn:active,
 .user-tools-btn:active,
 .site-menu-link:active,
 .subcatalog-item-link:active {
   opacity: 0.3;
 }
 
-.personal-account-link:focus:not(:active),
+.personal-account-btn:focus:not(:active),
 .user-tools-btn:focus:not(:active),
 .site-menu-link:focus:not(:active),
 .subcatalog-item-link:focus:not(:active) {
@@ -941,10 +948,6 @@
   opacity: 0.6;
 }
 
-.slider-pagination-button:hover {
-  opacity: 0.6;
-}
-
 .slider-pagination-button:active {
   opacity: 0.3;
 }
@@ -957,6 +960,10 @@
   width: 20px;
   height: 20px;
   border: 2px solid #af4fff;
+}
+
+.slider-pagination-button:disabled {
+  opacity: 0.1;
 }
 
 .product-features-list {
@@ -1387,6 +1394,23 @@
   text-decoration: none;
 }
 
+
+.address-desk .address-link:hover,
+.address-desk .telephone:hover {
+  opacity: 0.6;
+}
+
+.address-desk .address-link:active,
+.address-desk .telephone:active {
+  opacity: 0.3;
+}
+
+.address-desk .address-link:focus:not(:active),
+.address-desk .telephone:focus:not(:active) {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .feedback-link-btn {
   padding: 4px 32px;
   text-align: center;
@@ -1434,9 +1458,21 @@
   padding: 12px 17px;
 }
 
-.field-group .subscribe-submit-button {
+.subscribe .subscribe-submit-button {
   border-color: #cecece;
   padding: 12px 39px;
+}
+
+.subscribe .subscribe-submit-button:hover {
+  background-color: #ffffff;
+}
+
+.subscribe .subscribe-submit-button:focus:not(:active) {
+  background-color: #dcdcdc;
+}
+
+.subscribe .subscribe-submit-button:active {
+  background-color: #ebebeb;
 }
 
 .subscribe-form-info {
@@ -1778,6 +1814,7 @@
   background-image: url("../images/icon/i-icon.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1810,13 +1847,19 @@
 }
 
 .field-info:hover,
-.field-info:focus {
+.field-info:focus,
+.field-info:active {
   background-color: #ffc700;
 }
 
 .field-info:hover .field-info-text,
-.field-info:focus .field-info-text {
+.field-info:focus .field-info-text,
+.field-info:active .field-info-text {
   display: block;
+}
+
+.field-info:disabled {
+  opacity: 0.1;
 }
 
 .quantity {
@@ -2236,6 +2279,23 @@
           appearance: none;
 }
 
+.select:hover {
+  opacity: 0.6;
+}
+
+.select:active {
+  opacity: 0.3;
+}
+
+.select:focus:not(:active) {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.select:disabled {
+  opacity: 0.1;
+}
+
 .sort-button-list {
   display: flex;
   flex-wrap: wrap;
@@ -2246,10 +2306,11 @@
 
 .sort-button {
   position: relative;
+  display: inline-block;
   width: 30px;
   height: 30px;
-  border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .sort-button::before {
@@ -2439,6 +2500,7 @@
 .pagination-button-more {
   padding: 16px 39px;
   border: 3px solid #e5e5e5;
+  color: #000000;
   line-height: 16px;
   letter-spacing: 0.15em;
   min-height: 55px;
@@ -2450,8 +2512,8 @@
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 0.2em;
-  border: transparent;
   min-height: 71px;
+  color: #000000;
 }
 
 .pagination-button:hover {

@@ -35,28 +35,28 @@
 
         <div class="personal-account">
 
-          <a class="personal-account-link log-in">
+          <button class="personal-account-btn log-in" type="button">
             <span class="visually-hidden">
               Войти в личный кабинет
             </span>
             Войти
-          </a>
+          </button>
 
-          <a class="personal-account-link log-in visually-hidden">
+          <button class="personal-account-btn log-in visually-hidden" type="button">
             <span class="visually-hidden">
               Ваш личный кабинет
             </span>
             <span class="username">
               Коля Петухов
             </span>
-          </a>
+          </button>
 
-          <a class="personal-account-link log-out visually-hidden">
+          <button class="personal-account-btn log-out visually-hidden" type="button">
             <span class="visually-hidden">
               Выйти из личного кабинета
             </span>
             Выйти
-          </a>
+          </button>
         </div>
 
         <ul class="user-tools">
@@ -437,7 +437,7 @@
 
       <div class="tab-wrapper">
         <input type="radio" name="tab" id="tab1" checked>
-        <label class="tab-label no-select button" for="tab1">Доставка</label>
+        <label class="tab-label no-select button" for="tab1" type="button">Доставка</label>
         <div class="tab-item tab-item-delivery" id="tab-content1">
           <h3 class="section-title">Доставка</h3>
           <p class="section-desk">Мы с удовольствием доставим ваш товар прямо <br>
@@ -658,7 +658,7 @@
 
       <h2 class="modal-title section-title">Доставка под заказ</h2>
 
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
 
@@ -693,16 +693,17 @@
 
               <span class="field-title">
                 <label for="quantity-product">Количество:</label>
-                <span class="field-info">
+                <button class="field-info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   <span class="field-info-text">
                     Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
                     <br>к провозу багажа.
                   </span>
-                </span>
+                </button>
               </span>
 
               <div class="quantity-field quantity">
-                <button class="quantity-btn btn-minus">
+                <button class="quantity-btn btn-minus" type="button">
                   <span class="visually-hidden">
                     Уменьшить количество товара
                   </span>
@@ -715,7 +716,7 @@
                 <input class="quantity-input field-input" type="number" value="1" name="quantity-product"
                   id="quantity-product" placeholder="0" min="0" step="1">
 
-                <button class="quantity-btn btn-plus">
+                <button class="quantity-btn btn-plus" type="button">
                   <span class="visually-hidden">
                     Увеличить количество товара
                   </span>
